@@ -73,7 +73,7 @@ export const HomePage: React.FC = () => {
         <div className="relative z-10 mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="group relative rounded-lg overflow-hidden border border-white/10 bg-black aspect-[16/9]">
             <img
-              src="/ultron_dna_minimal.jpg"
+              src="./ultron_dna_minimal.jpg"
               alt="Minimal Titanium DNA Double Helix"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               loading="eager"
@@ -89,7 +89,7 @@ export const HomePage: React.FC = () => {
 
           <div className="group relative rounded-lg overflow-hidden border border-white/10 bg-black aspect-[16/9]">
             <img
-              src="/ultron_core_minimal.jpg"
+              src="./ultron_core_minimal.jpg"
               alt="Synthetic Computational Core"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               loading="lazy"
