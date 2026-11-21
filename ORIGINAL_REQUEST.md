@@ -5,20 +5,20 @@
 # Teamwork Project Prompt — Final
 
 > Status: Launched
-> Goal: Multi-agent execution of Ultron AI Scientist web platform
+> Goal: Multi-agent execution of Svel AI Scientist web platform
 > Requested team: Full multi-agent build team
 
-Ultron is an autonomous synthetic research organism designed to run continuous 12–72 hour scientific campaigns, utilizing deterministic physics engines, zero-token epistemic regulators, cryptographic proof-of-work weight audits, and Scholar-Prosecutor dual-stream agent swarms. This project builds a high-conviction, multi-page deeptech web platform featuring an austere, disciplined monochrome black aesthetic, interactive minimal 3D DNA/particle canvas shaders, real architectural interactive consoles, and automated Vercel deployment.
+Svel is an autonomous synthetic research organism designed to run continuous 12–72 hour scientific campaigns, utilizing deterministic physics engines, zero-token epistemic regulators, cryptographic proof-of-work weight audits, and Scholar-Prosecutor dual-stream agent swarms. This project builds a high-conviction, multi-page deeptech web platform featuring an austere, disciplined monochrome black aesthetic, interactive minimal 3D DNA/particle canvas shaders, real architectural interactive consoles, and automated Vercel deployment.
 
-Working directory: `/Users/samaraldico/ultron-ai-scientist-web`
+Working directory: `/Users/samaraldico/svel-ai-scientist-web`
 Integrity mode: development
 
 ---
 
 ## Visual Assets (Minimalist DeepTech Canon)
 
-- Minimal Titanium DNA Double Helix: `/Users/samaraldico/.gemini/antigravity/brain/6ff60fee-ffe5-4599-a785-265c40526e0a/ultron_dna_minimal_1791549650451.jpg`
-- Synthetic Computational Core: `/Users/samaraldico/.gemini/antigravity/brain/6ff60fee-ffe5-4599-a785-265c40526e0a/ultron_core_minimal_1791549670850.jpg`
+- Minimal Titanium DNA Double Helix: `/Users/samaraldico/.gemini/antigravity/brain/6ff60fee-ffe5-4599-a785-265c40526e0a/svel_dna_minimal_1791549650451.jpg`
+- Synthetic Computational Core: `/Users/samaraldico/.gemini/antigravity/brain/6ff60fee-ffe5-4599-a785-265c40526e0a/svel_core_minimal_1791549670850.jpg`
 
 ---
 
@@ -30,12 +30,12 @@ Integrity mode: development
 - Modern Web Guidance compliance: `color-scheme: dark`, accessible high-contrast text ratios, crisp typographic scale (Geist / Inter / JetBrains Mono), responsive layouts.
 
 ### R2. Multi-Page Architecture & Authentic Ground-Truth Content
-The platform must feature 5 dedicated pages grounded directly in the Ultron codebase (`/Users/samaraldico/ULTRON AI Scientist`):
+The platform must feature 5 dedicated pages grounded directly in the Svel codebase (`/Users/samaraldico/SVEL AI Scientist`):
 1. **Home / Hero (`/`)**: High-conviction landing page showcasing the minimal DNA visual, real telemetry statistics (12–72h autonomous campaigns, 0-token epistemic regulation, $3.25/run unit cost vs $240k human roles), core thesis, and feature highlights.
 2. **Architecture & Discovery Engine (`/architecture`)**: Deep architectural teardown:
-   - 4-Tier Swarm: Executive Orchestrator (`Ultron-Core`), `Scholar-Prosecutor Dual Stream`, `CodeEngineer & SimulationRunner`, `MarketScout`.
+   - 4-Tier Swarm: Executive Orchestrator (`Svel-Core`), `Scholar-Prosecutor Dual Stream`, `CodeEngineer & SimulationRunner`, `MarketScout`.
    - The Falsification Engine (`falsification_engine.py`): Monte Carlo adversarial perturbation, differential evolution, and the Unbreakability Index.
-   - Proof-of-Work Weight Auditing (`UltronRigorMonitor`): Cryptographic SHA-256 model weight divergence hashing.
+   - Proof-of-Work Weight Auditing (`SvelRigorMonitor`): Cryptographic SHA-256 model weight divergence hashing.
    - Epistemic Regulator: Log-Odds confidence slope $\ln(p / (1 - p))$ and Welch-Z clash detection.
 3. **Autonomous Campaigns & "The Morgue" (`/campaigns`)**: Interactive 72-hour execution timeline emulator showcasing TCP congestion control backoff, sigmoidal temperature decay curves, AST syntax audits, and the semantic kill-chain memory of eliminated hypotheses ("The Morgue").
 4. **Scientific Disciplines & Domain Kernels (`/domains`)**:
@@ -48,7 +48,7 @@ The platform must feature 5 dedicated pages grounded directly in the Ultron code
 ### R3. Interactive Scientific Simulations & Live Visualizers
 - **Interactive Minimal DNA / Particle Canvas**: Monochrome particle physics double helix with subtle luminescent nodes.
 - **Epistemic Confidence Simulator**: Interactive Logit derivative slider demonstrating why linear scoring fails near confidence asymptotic limits.
-- **Real-Time Telemetry Terminal**: Live streaming trace emulator with genuine Ultron telemetry events (e.g., `UltronRigorMonitor: SHA-256 weight delta = 0.0418 > epsilon [VERIFIED]`).
+- **Real-Time Telemetry Terminal**: Live streaming trace emulator with genuine Svel telemetry events (e.g., `SvelRigorMonitor: SHA-256 weight delta = 0.0418 > epsilon [VERIFIED]`).
 
 ### R4. Production Codebase & Vercel Deployment Readiness
 - Built with **TypeScript Strict Mode** and **Tailwind CSS**.
@@ -66,7 +66,7 @@ The platform must feature 5 dedicated pages grounded directly in the Ultron code
 - [ ] Seamless client-side navigation between all 5 pages.
 
 ### Scientific Grounding & Rigor
-- [ ] All scientific claims, mathematical formulas, and swarm roles strictly match the `/Users/samaraldico/ULTRON AI Scientist` codebase.
+- [ ] All scientific claims, mathematical formulas, and swarm roles strictly match the `/Users/samaraldico/SVEL AI Scientist` codebase.
 - [ ] Interactive Epistemic Simulator plots correct Logit curves.
 - [ ] Telemetry terminal streams authentic execution logs without freezing.
 

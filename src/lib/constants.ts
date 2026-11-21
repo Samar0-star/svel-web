@@ -1,6 +1,6 @@
 /**
- * Canonical Constants for Ultron AI Scientist Web Platform
- * Directly aligned with /Users/samaraldico/ULTRON AI Scientist source code:
+ * Canonical Constants for Svel AI Scientist Web Platform
+ * Directly aligned with /Users/samaraldico/SVEL AI Scientist source code:
  * - backend/epistemic/epistemic_regulator.py
  * - backend/experiments/templates/physics/fusion_plasma_kernel.py
  * - backend/experiments/kernels/physics_kernels.py

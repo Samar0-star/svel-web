@@ -20,13 +20,13 @@ import {
 import {
   createTestEnvironment,
   fireEvent,
-  UltronComponentHarness,
+  SvelComponentHarness,
 } from './helpers/dom-harness.mjs';
 
 export async function runTier3Tests(recordResult) {
   await recordResult('T3.1 — Route Navigation While Canvas Animation Loop Runs', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const root = env.document.getElementById('root');
 
     // Mount canvas on home page
@@ -44,7 +44,7 @@ export async function runTier3Tests(recordResult) {
 
   await recordResult('T3.2 — Telemetry Channel Filtering with Simultaneous Epistemic Slider Adjustments', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     env.document.body.appendChild(container);
 
@@ -70,7 +70,7 @@ export async function runTier3Tests(recordResult) {
 
   await recordResult('T3.3 — Waitlist Modal Open / Close During Active Canvas Rendering', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     env.document.body.appendChild(container);
 
@@ -94,7 +94,7 @@ export async function runTier3Tests(recordResult) {
 
   await recordResult('T3.4 — Epistemic Slider Stagnation Event Reflected in Telemetry Feed', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     env.document.body.appendChild(container);
 
@@ -117,7 +117,7 @@ export async function runTier3Tests(recordResult) {
 
   await recordResult('T3.5 — Domain Kernel Selection with Concurrent Telemetry Stream', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     env.document.body.appendChild(container);
 
@@ -140,7 +140,7 @@ export async function runTier3Tests(recordResult) {
 
   await recordResult('T3.6 — Modal Credential Submission While Navigating Routes', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const root = env.document.getElementById('root');
 
     harness.mountFullApp(root, '/console');
@@ -153,7 +153,7 @@ export async function runTier3Tests(recordResult) {
 
     fireEvent(modal.submitBtn, 'click');
     const generatedKey = modal.keyDisplay.textContent;
-    assertMatches(generatedKey, /^ultron_live_sk_[a-f0-9]{32}$/);
+    assertMatches(generatedKey, /^svel_live_sk_[a-f0-9]{32}$/);
 
     // Navigate to /campaigns
     harness.mountFullApp(root, '/campaigns');
@@ -164,7 +164,7 @@ export async function runTier3Tests(recordResult) {
     const env = createTestEnvironment();
     env.window.innerWidth = 375;
 
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     env.document.body.appendChild(container);
 
@@ -189,7 +189,7 @@ export async function runTier3Tests(recordResult) {
 
   await recordResult('T3.8 — Copy Simulated API Key While Telemetry Streams', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     env.document.body.appendChild(container);
 

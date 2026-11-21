@@ -1,4 +1,4 @@
-# TEST_READY.md — Ultron AI Scientist Web Platform E2E Test Suite
+# TEST_READY.md — Svel AI Scientist Web Platform E2E Test Suite
 
 > **Suite Status**: READY & VERIFIED  
 > **Pass Rate**: 100% (73 / 73 Tests Passing)  
@@ -72,7 +72,7 @@ Both commands run the complete 4-tier requirement-driven opaque-box verification
 - **T1.7.1** — Modal Trigger Button & Initial Hidden State (`aria-haspopup="dialog"`, opens on click)
 - **T1.7.2** — Required Form Input Elements Presence (Name, Email, Organization, Domain Select)
 - **T1.7.3** — Email Format Validation Enforcement (rejects invalid email formats, keeps result hidden)
-- **T1.7.4** — Simulated Key Generation (`ultron_live_sk_[a-f0-9]{32}`)
+- **T1.7.4** — Simulated Key Generation (`svel_live_sk_[a-f0-9]{32}`)
 - **T1.7.5** — Keyboard Escape & Backdrop Dismissal (closes on `Escape` key and backdrop clicks)
 
 ### Tier 2: Boundary & Corner Cases (25 Tests)
@@ -124,7 +124,7 @@ Both commands run the complete 4-tier requirement-driven opaque-box verification
 ## 4. Test Suite Architecture
 
 ```
-/Users/samaraldico/ultron-ai-scientist-web/
+/Users/samaraldico/svel-ai-scientist-web/
 ├── e2e/
 │   ├── runner.mjs                 # Master colored CLI runner with timings and stats
 │   ├── tier1-features.e2e.mjs     # Tier 1: 35 Feature coverage tests

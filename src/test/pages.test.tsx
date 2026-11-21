@@ -7,7 +7,7 @@ import CampaignsPage from '../pages/CampaignsPage';
 import DomainsPage from '../pages/DomainsPage';
 import ConsolePage from '../pages/ConsolePage';
 
-describe('Ultron 5 Dedicated Core Pages', () => {
+describe('Svel 5 Dedicated Core Pages', () => {
   describe('HomePage', () => {
     it('renders hero title, Karl Popper epigraph, and telemetry metrics', () => {
       render(
@@ -34,7 +34,7 @@ describe('Ultron 5 Dedicated Core Pages', () => {
       );
 
       expect(screen.getByText(/4-Tier Swarm & Falsification Engine/i)).toBeInTheDocument();
-      expect(screen.getByText(/TIER 1: ULTRON-CORE ORCHESTRATOR/i)).toBeInTheDocument();
+      expect(screen.getByText(/TIER 1: SVEL-CORE ORCHESTRATOR/i)).toBeInTheDocument();
       expect(screen.getByText(/TIER 2: SCHOLAR & PROSECUTOR/i)).toBeInTheDocument();
       expect(screen.getByText(/TIER 3: CODEENGINEER & SIMULATIONRUNNER/i)).toBeInTheDocument();
       expect(screen.getByText(/TIER 4: RIGOR MONITOR \(POW\)/i)).toBeInTheDocument();

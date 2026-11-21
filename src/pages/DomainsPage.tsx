@@ -60,7 +60,7 @@ export const DomainsPage: React.FC = () => {
           Deterministic Domain Simulation Kernels
         </h1>
         <p className="text-neutral-400 text-sm sm:text-base mt-3 max-w-3xl font-sans leading-relaxed">
-          Ultron grounds reasoning in verified numerical libraries (RDKit, AutoDock Vina, pymatgen, M3GNet), Cubic Born stability criteria, physics engines (Bremsstrahlung), and biostatistical protocols
+          Svel grounds reasoning in verified numerical libraries (RDKit, AutoDock Vina, pymatgen, M3GNet), Cubic Born stability criteria, physics engines (Bremsstrahlung), and biostatistical protocols
           across molecular pharmacology, condensed matter lattices, relativistic plasma fusion, and
           multimodal frontier AI.
         </p>

@@ -117,7 +117,7 @@ describe('Interactive Simulation Components', () => {
 
       await waitFor(() => {
         expect(screen.getByText(/Research Credentials Generated/i)).toBeInTheDocument();
-        expect(screen.getByText(/ultron_live_sk_/i)).toBeInTheDocument();
+        expect(screen.getByText(/svel_live_sk_/i)).toBeInTheDocument();
       });
     });
 

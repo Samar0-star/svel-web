@@ -28,7 +28,7 @@
       ]
     },
     {
-      "source": "/(ultron_.*\\.jpg)",
+      "source": "/(svel_.*\\.jpg)",
       "headers": [
         {
           "key": "Cache-Control",

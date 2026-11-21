@@ -11,7 +11,7 @@ describe('Navbar', () => {
       </MemoryRouter>
     );
 
-    expect(screen.getByText('ULTRON')).toBeInTheDocument();
+    expect(screen.getByText('SVEL')).toBeInTheDocument();
     expect(screen.getByText('AI SCIENTIST')).toBeInTheDocument();
     expect(screen.getByText('SWARM ACTIVE')).toBeInTheDocument();
   });

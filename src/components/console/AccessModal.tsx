@@ -49,13 +49,13 @@ export const AccessModal: React.FC<AccessModalProps> = ({ isOpen, onClose }) => 
       return;
     }
 
-    // Generate simulated API key: ultron_live_sk_<32hex>
+    // Generate simulated API key: svel_live_sk_<32hex>
     const hexChars = '0123456789abcdef';
     let hex = '';
     for (let i = 0; i < 32; i++) {
       hex += hexChars.charAt(Math.floor(Math.random() * hexChars.length));
     }
-    const newApiKey = `ultron_live_sk_${hex}`;
+    const newApiKey = `svel_live_sk_${hex}`;
     setGeneratedKey(newApiKey);
   };
 
@@ -78,7 +78,7 @@ export const AccessModal: React.FC<AccessModalProps> = ({ isOpen, onClose }) => 
       className="modal-backdrop fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
       role="dialog"
       aria-modal="true"
-      aria-label="Ultron Early Access Request"
+      aria-label="Svel Early Access Request"
       onClick={(e) => {
         if (e.target === e.currentTarget) {
           resetAndClose();
@@ -108,7 +108,7 @@ export const AccessModal: React.FC<AccessModalProps> = ({ isOpen, onClose }) => 
         {!generatedKey ? (
           <form onSubmit={handleSubmit} className="space-y-4">
             <p className="text-xs text-neutral-400 font-sans leading-relaxed">
-              Ultron autonomous campaigns require institutional credential verification to allocate
+              Svel autonomous campaigns require institutional credential verification to allocate
               GPU cluster nodes and prevent runaway research loops.
             </p>
 

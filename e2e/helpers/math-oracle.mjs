@@ -1,6 +1,6 @@
 /**
- * Mathematical Oracle for Ultron AI Scientist Web Platform
- * Derived directly from ground-truth algorithms in /Users/samaraldico/ULTRON AI Scientist:
+ * Mathematical Oracle for Svel AI Scientist Web Platform
+ * Derived directly from ground-truth algorithms in /Users/samaraldico/SVEL AI Scientist:
  * - Epistemic Regulator: Logit slope, Welch-Z clash detection, Bayesian updating
  * - Physics Kernel: Relativistic Bremsstrahlung radiation, Lyapunov spectrum
  * - Materials Kernel: Cubic Born mechanical stability, Voigt moduli

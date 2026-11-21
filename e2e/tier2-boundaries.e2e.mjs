@@ -17,7 +17,7 @@ import {
 import {
   createTestEnvironment,
   fireEvent,
-  UltronComponentHarness,
+  SvelComponentHarness,
 } from './helpers/dom-harness.mjs';
 import {
   calculateLogitSlope,
@@ -32,7 +32,7 @@ export async function runTier2Tests(recordResult) {
 
   await recordResult('T2.1.1 — Empty Input Form Submission Blocked', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const modal = harness.mountAccessModal(container);
     modal.openModal();
@@ -47,7 +47,7 @@ export async function runTier2Tests(recordResult) {
 
   await recordResult('T2.1.2 — Whitespace-Only String Inputs Trimmed & Rejected', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const modal = harness.mountAccessModal(container);
     modal.openModal();
@@ -62,7 +62,7 @@ export async function runTier2Tests(recordResult) {
 
   await recordResult('T2.1.3 — Extreme Character Count (10,000 Chars) Ingested Safely', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const modal = harness.mountAccessModal(container);
     modal.openModal();
@@ -78,7 +78,7 @@ export async function runTier2Tests(recordResult) {
 
   await recordResult('T2.1.4 — XSS Meta-Characters & Script Injection Escaped Safely', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const modal = harness.mountAccessModal(container);
     modal.openModal();
@@ -94,7 +94,7 @@ export async function runTier2Tests(recordResult) {
 
   await recordResult('T2.1.5 — Malformed Email Format Variations Blocked', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const modal = harness.mountAccessModal(container);
     modal.openModal();
@@ -163,7 +163,7 @@ export async function runTier2Tests(recordResult) {
     env.window.innerWidth = 375;
     env.window.innerHeight = 667;
 
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const { canvas, unmount } = harness.mountDnaCanvas(container, { width: 375, height: 667 });
 
@@ -177,7 +177,7 @@ export async function runTier2Tests(recordResult) {
     env.window.innerWidth = 1024;
     env.window.innerHeight = 768;
 
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const { canvas, unmount } = harness.mountDnaCanvas(container, { width: 1024, height: 768 });
 
@@ -191,7 +191,7 @@ export async function runTier2Tests(recordResult) {
     env.window.innerWidth = 2560;
     env.window.innerHeight = 1440;
 
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const { canvas, unmount } = harness.mountDnaCanvas(container, { width: 2560, height: 1440 });
 
@@ -205,7 +205,7 @@ export async function runTier2Tests(recordResult) {
     env.window.innerWidth = 320;
     env.window.innerHeight = 568;
 
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const terminal = harness.mountTelemetryTerminal(container);
 
@@ -215,7 +215,7 @@ export async function runTier2Tests(recordResult) {
 
   await recordResult('T2.3.5 — Dynamic Window Resize Mid-Render Cycle', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const { canvas, unmount } = harness.mountDnaCanvas(container, { width: 800, height: 600 });
 
@@ -238,7 +238,7 @@ export async function runTier2Tests(recordResult) {
 
   await recordResult('T2.4.1 — Rapid Route Hopping (10 Transitions in 100ms)', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const root = env.document.getElementById('root');
 
     const routes = ['/', '/architecture', '/campaigns', '/domains', '/console'];
@@ -253,7 +253,7 @@ export async function runTier2Tests(recordResult) {
 
   await recordResult('T2.4.2 — History Back / Forward Navigation Traversal', async () => {
     const env = createTestEnvironment('http://localhost:3000/architecture');
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const root = env.document.getElementById('root');
 
     harness.mountFullApp(root, '/architecture');
@@ -265,7 +265,7 @@ export async function runTier2Tests(recordResult) {
 
   await recordResult('T2.4.3 — Direct Deep Linking to Sub-Route (/domains)', async () => {
     const env = createTestEnvironment('http://localhost:3000/domains');
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const root = env.document.getElementById('root');
     harness.mountFullApp(root, '/domains');
 
@@ -275,7 +275,7 @@ export async function runTier2Tests(recordResult) {
 
   await recordResult('T2.4.4 — 404 Fallback Route Redirection', async () => {
     const env = createTestEnvironment('http://localhost:3000/non-existent-kernel');
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const root = env.document.getElementById('root');
     // In App.tsx: <Route path="*" element={<Navigate to="/" replace />} />
     harness.mountFullApp(root, '/');
@@ -286,7 +286,7 @@ export async function runTier2Tests(recordResult) {
 
   await recordResult('T2.4.5 — Route Transition Memory Stability (Zero DOM Leaks)', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const root = env.document.getElementById('root');
 
     const initialNodes = env.document.body.getElementsByTagName('*').length;
@@ -307,7 +307,7 @@ export async function runTier2Tests(recordResult) {
 
   await recordResult('T2.5.1 — Rapid Pause / Resume Toggle Stability (50 Toggles)', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const terminal = harness.mountTelemetryTerminal(container);
 
@@ -321,7 +321,7 @@ export async function runTier2Tests(recordResult) {
 
   await recordResult('T2.5.2 — Max Buffer Enforcement on 1,000 Pushed Logs', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const terminal = harness.mountTelemetryTerminal(container, { maxLogs: 20 });
 
@@ -336,7 +336,7 @@ export async function runTier2Tests(recordResult) {
 
   await recordResult('T2.5.3 — Paused State Discards Live Additions Deterministically', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const terminal = harness.mountTelemetryTerminal(container);
 
@@ -350,7 +350,7 @@ export async function runTier2Tests(recordResult) {
 
   await recordResult('T2.5.4 — Empty Filter Channel Displays Structured Fallback Notice', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const terminal = harness.mountTelemetryTerminal(container);
 
@@ -363,7 +363,7 @@ export async function runTier2Tests(recordResult) {
 
   await recordResult('T2.5.5 — High-Frequency Stream Generation Interval (500 logs/sec)', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const terminal = harness.mountTelemetryTerminal(container, { maxLogs: 50 });
 

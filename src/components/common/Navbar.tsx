@@ -43,7 +43,7 @@ export const Navbar: React.FC = () => {
             </div>
             <div className="flex flex-col">
               <span className="font-mono font-bold text-sm tracking-wider text-white flex items-center gap-1.5">
-                ULTRON
+                SVEL
                 <span className="text-[10px] px-1 py-0.2 bg-emerald-cold/10 border border-emerald-cold/30 text-emerald-cold rounded">
                   v2.4
                 </span>

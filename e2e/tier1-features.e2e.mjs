@@ -21,7 +21,7 @@ import {
   createTestEnvironment,
   fireEvent,
   queryByText,
-  UltronComponentHarness,
+  SvelComponentHarness,
 } from './helpers/dom-harness.mjs';
 import {
   calculateLogitSlope,
@@ -42,7 +42,7 @@ export async function runTier1Tests(recordResult) {
 
   await recordResult('T1.1.1 — Home / Hero Route (/) Verification', async () => {
     const env = createTestEnvironment('http://localhost:3000/');
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const { container } = harness.mountFullApp(env.document.getElementById('root'), '/');
 
     // Verify root DOM structure and home page content from actual code
@@ -51,17 +51,17 @@ export async function runTier1Tests(recordResult) {
     assert(homeSrc.includes('12–72 Hour Scientific Campaigns'), 'Missing 12-72h campaign title');
     assert(homeSrc.includes('ln(p/(1-p))'), 'Missing logit formula in home page');
     assert(homeSrc.includes('$3.25'), 'Missing unit cost metric in home page');
-    assert(homeSrc.includes('/ultron_dna_minimal.jpg'), 'Missing DNA visual asset link');
-    assert(homeSrc.includes('/ultron_core_minimal.jpg'), 'Missing Core visual asset link');
+    assert(homeSrc.includes('/svel_dna_minimal.jpg'), 'Missing DNA visual asset link');
+    assert(homeSrc.includes('/svel_core_minimal.jpg'), 'Missing Core visual asset link');
 
     const brand = container.querySelector('.brand-link');
-    assertEqual(brand.textContent.trim(), 'ULTRON');
+    assertEqual(brand.textContent.trim(), 'SVEL');
   });
 
   await recordResult('T1.1.2 — Architecture Route (/architecture) Verification', async () => {
     const archSrc = fs.readFileSync(path.resolve('./src/pages/ArchitecturePage.tsx'), 'utf-8');
     assert(archSrc.includes('4-Tier Swarm'), 'Missing 4-Tier swarm definition');
-    assert(archSrc.includes('TIER 1: ULTRON-CORE'), 'Missing Tier 1 Orchestrator');
+    assert(archSrc.includes('TIER 1: SVEL-CORE'), 'Missing Tier 1 Orchestrator');
     assert(archSrc.includes('TIER 2: SCHOLAR & PROSECUTOR'), 'Missing Tier 2 Scholar-Prosecutor');
     assert(archSrc.includes('TIER 3: CODEENGINEER & SIMULATIONRUNNER'), 'Missing Tier 3 SimulationRunner');
     assert(archSrc.includes('TIER 4: RIGOR MONITOR (POW)'), 'Missing Tier 4 Rigor Monitor');
@@ -154,7 +154,7 @@ export async function runTier1Tests(recordResult) {
 
   await recordResult('T1.3.1 — Canvas Element Presence & Accessibility Roles', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     env.document.body.appendChild(container);
 
@@ -167,7 +167,7 @@ export async function runTier1Tests(recordResult) {
 
   await recordResult('T1.3.2 — Canvas Context Acquisition & Dimensions', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const { canvas, ctx, unmount } = harness.mountDnaCanvas(container, { width: 1920, height: 1080 });
 
@@ -179,7 +179,7 @@ export async function runTier1Tests(recordResult) {
 
   await recordResult('T1.3.3 — Animation Frame Request Loop Execution at 60 FPS', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const { unmount } = harness.mountDnaCanvas(container);
 
@@ -191,7 +191,7 @@ export async function runTier1Tests(recordResult) {
 
   await recordResult('T1.3.4 — Pointer / Mouse Movement Interaction Binding', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     env.document.body.appendChild(container);
     const { unmount, getMousePos } = harness.mountDnaCanvas(container);
@@ -205,7 +205,7 @@ export async function runTier1Tests(recordResult) {
 
   await recordResult('T1.3.5 — Lifecycle Unmount Teardown & Zero Memory Leaks', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     env.document.body.appendChild(container);
     const { unmount } = harness.mountDnaCanvas(container);
@@ -222,7 +222,7 @@ export async function runTier1Tests(recordResult) {
 
   await recordResult('T1.4.1 — Stream Generation & Timestamp Logging', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     env.document.body.appendChild(container);
 
@@ -238,7 +238,7 @@ export async function runTier1Tests(recordResult) {
 
   await recordResult('T1.4.2 — Authentic Channel Formatting & Color Tokens', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const terminal = harness.mountTelemetryTerminal(container);
 
@@ -253,11 +253,11 @@ export async function runTier1Tests(recordResult) {
 
   await recordResult('T1.4.3 — SHA-256 Model Weight Delta Verification Event', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const terminal = harness.mountTelemetryTerminal(container);
 
-    const verifiedMsg = 'UltronRigorMonitor: SHA-256 weight delta = 0.0418 > epsilon [VERIFIED]';
+    const verifiedMsg = 'SvelRigorMonitor: SHA-256 weight delta = 0.0418 > epsilon [VERIFIED]';
     terminal.pushLog('RIGOR-VERIFIED', verifiedMsg);
 
     const log = terminal.getLogs().find((l) => l.message.includes('0.0418'));
@@ -267,7 +267,7 @@ export async function runTier1Tests(recordResult) {
 
   await recordResult('T1.4.4 — Channel Filtering Isolates Target Events', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const terminal = harness.mountTelemetryTerminal(container);
 
@@ -285,7 +285,7 @@ export async function runTier1Tests(recordResult) {
 
   await recordResult('T1.4.5 — Buffer Capacity Cap & Stream Pause / Resume', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const terminal = harness.mountTelemetryTerminal(container, { maxLogs: 5 });
 
@@ -417,7 +417,7 @@ export async function runTier1Tests(recordResult) {
 
   await recordResult('T1.7.1 — Modal Trigger Button & Initial Hidden State', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     env.document.body.appendChild(container);
 
@@ -430,7 +430,7 @@ export async function runTier1Tests(recordResult) {
 
   await recordResult('T1.7.2 — Required Form Input Elements Presence', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const modal = harness.mountAccessModal(container);
 
@@ -442,7 +442,7 @@ export async function runTier1Tests(recordResult) {
 
   await recordResult('T1.7.3 — Email Format Validation Enforcement', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const modal = harness.mountAccessModal(container);
     modal.openModal();
@@ -455,9 +455,9 @@ export async function runTier1Tests(recordResult) {
     assert(modal.resultBox.classList.contains('hidden'), 'Result box should remain hidden for invalid email');
   });
 
-  await recordResult('T1.7.4 — Simulated Key Generation: ultron_live_sk_[32hex]', async () => {
+  await recordResult('T1.7.4 — Simulated Key Generation: svel_live_sk_[32hex]', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     const modal = harness.mountAccessModal(container);
     modal.openModal();
@@ -469,12 +469,12 @@ export async function runTier1Tests(recordResult) {
     fireEvent(modal.submitBtn, 'click');
     assertEqual(modal.resultBox.classList.contains('hidden'), false);
     const generatedKey = modal.keyDisplay.textContent;
-    assertMatches(generatedKey, /^ultron_live_sk_[a-f0-9]{32}$/);
+    assertMatches(generatedKey, /^svel_live_sk_[a-f0-9]{32}$/);
   });
 
   await recordResult('T1.7.5 — Keyboard Escape & Backdrop Dismissal', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const container = env.document.createElement('div');
     env.document.body.appendChild(container);
     const modal = harness.mountAccessModal(container);

@@ -172,7 +172,7 @@ export const ConsolePage: React.FC = () => {
             <MetallicCard title="CREDENTIALS &amp; API TOKENS" badge="INVITE ONLY" variant="terminal" glowOnHover>
               <div className="space-y-4 text-xs font-mono">
                 <p className="text-neutral-300 font-sans leading-relaxed">
-                  Connect to Ultron ARC compute clusters for multi-day autonomous research campaigns.
+                  Connect to Svel ARC compute clusters for multi-day autonomous research campaigns.
                 </p>
 
                 <div className="p-3 rounded bg-obsidian-900 border border-white/10 space-y-2">

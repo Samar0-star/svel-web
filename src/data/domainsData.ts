@@ -41,7 +41,7 @@ export const DOMAINS_DATA: DomainKernel[] = [
     subtitle: 'Intention-to-Treat Protocols, 3D Conformer Ensembles & Receptor Docking',
     discipline: 'Computational Biology & ChemInformatics',
     badge: 'RDKIT + AUTODOCK VINA',
-    engine: 'ClinicalTrialTemplate & UltronApexChemistryTemplate',
+    engine: 'ClinicalTrialTemplate & SvelApexChemistryTemplate',
     description:
       'Rigorous biostatistical execution combining Intention-to-Treat (ITT) population analysis, Shapiro-Wilk and Levene normality pre-flights, RDKit ETKDGv3 3D conformer generation, PAINS substructure rejection, and AutoDock Vina thermodynamic binding gates.',
     equations: [
@@ -96,7 +96,7 @@ def embed_conformer_and_dock(smiles: str, pocket_centroid: tuple):
     subtitle: 'Spacegroup Symmetry, M3GNet Universal Potentials & Elastic Tensors',
     discipline: 'Computational Solid-State Physics',
     badge: 'PYMATGEN + M3GNET PES',
-    engine: 'UltronApexMaterialsTemplate & SuperconductivityKernel',
+    engine: 'SvelApexMaterialsTemplate & SuperconductivityKernel',
     description:
       'High-throughput ab initio lattice simulation integrating pymatgen SpacegroupAnalyzer, Materials Project M3GNet Universal Graph Neural Network potentials, BFGS cell and coordinate relaxation (F_max <= 0.05 eV/Å), Voigt elastic moduli, and Born mechanical stability criteria.',
     equations: [

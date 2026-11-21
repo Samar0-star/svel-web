@@ -1,15 +1,15 @@
-# ULTRON AI Scientist — Web Platform
+# SVEL AI Scientist — Web Platform
 
 > Autonomous 12–72 hour scientific research organism with Scholar-Prosecutor dual streams and cryptographic falsification.
 
-Live Web: [https://samar0-star.github.io/ultron-web/](https://samar0-star.github.io/ultron-web/)  
-Core Engine Repository: [https://github.com/Samar0-star/ULTRON](https://github.com/Samar0-star/ULTRON)
+Live Web: [https://samar0-star.github.io/svel-web/](https://samar0-star.github.io/svel-web/)  
+Core Engine Repository: [https://github.com/Samar0-star/SVEL](https://github.com/Samar0-star/SVEL)
 
 ---
 
 ## Overview
 
-The ULTRON Web Platform is the interface and visual inspection terminal for the ULTRON autonomous research engine. Built with React 18, TypeScript, Tailwind CSS, and Vite, it surfaces:
+The SVEL Web Platform is the interface and visual inspection terminal for the SVEL autonomous research engine. Built with React 18, TypeScript, Tailwind CSS, and Vite, it surfaces:
 
 - **Scientific Overview**: Autonomous discovery loop across 12–72 hour scientific campaigns.
 - **Architecture**: 4-tier swarm structure (Director, Scholar, Prosecutor, Verifier) and epistemic falsification engine.
@@ -33,8 +33,8 @@ The ULTRON Web Platform is the interface and visual inspection terminal for the 
 
 ```bash
 # Clone the repository
-git clone https://github.com/Samar0-star/ultron-web.git
-cd ultron-web
+git clone https://github.com/Samar0-star/svel-web.git
+cd svel-web
 
 # Install dependencies
 npm install
@@ -53,4 +53,4 @@ npm run build
 
 ## License
 
-MIT © Samar Aldico / ULTRON Autonomous Research
+MIT © Samar Aldico / SVEL Autonomous Research

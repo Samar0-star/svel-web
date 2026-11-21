@@ -98,7 +98,7 @@ export const CampaignsPage: React.FC = () => {
           72-Hour Continuous Execution &amp; Semantic Kill-Chain
         </h1>
         <p className="text-neutral-400 text-sm sm:text-base mt-3 max-w-3xl font-sans leading-relaxed">
-          Ultron research campaigns operate continuously without human intervention across 12-to-72 hour
+          Svel research campaigns operate continuously without human intervention across 12-to-72 hour
           horizons with sigmoidal temperature decay and TCP AIMD congestion backoff. All eliminated conjectures
           are permanently archived in &ldquo;The Morgue&rdquo; to immunize the swarm against duplicate exploration and wasted GPU cycles.
         </p>

@@ -1,7 +1,7 @@
 /**
  * Authentic Telemetry Events & Execution Traces
- * Extracted from real Ultron execution runs across:
- * - UltronRigorMonitor PoW weight audits
+ * Extracted from real Svel execution runs across:
+ * - SvelRigorMonitor PoW weight audits
  * - GlobalScheduler TCP AIMD congestion backoff
  * - Epistemic Regulator logit derivative & Welch-Z checks
  * - The Morgue semantic kill-chain vector rejection
@@ -99,7 +99,7 @@ export const INITIAL_TELEMETRY_LOGS: TelemetryLog[] = [
     level: 'INFO',
     channel: 'RIGOR',
     tag: '[RIGOR]',
-    message: 'UltronRigorMonitor: ARMED. Cryptographic nonce challenge issued: 7f3b89e210ac.',
+    message: 'SvelRigorMonitor: ARMED. Cryptographic nonce challenge issued: 7f3b89e210ac.',
     details: 'Initial state locked to disk: SHA-256 = 893cb8678404f06872d81f4047ab3fffe899ab8d8df1304eea9a8f20761e04fb (48,220 params).',
   },
   {
@@ -108,7 +108,7 @@ export const INITIAL_TELEMETRY_LOGS: TelemetryLog[] = [
     level: 'SUCCESS',
     channel: 'RIGOR',
     tag: '[RIGOR-VERIFIED]',
-    message: 'UltronRigorMonitor: SHA-256 weight delta = 0.0418 > epsilon [VERIFIED-7f3b89e210ac]',
+    message: 'SvelRigorMonitor: SHA-256 weight delta = 0.0418 > epsilon [VERIFIED-7f3b89e210ac]',
     details: 'Physical transformation detected: Gradient norm = 0.041829 >= 1e-5 threshold. Zero simulation fraud.',
     metrics: { weightDelta: 0.0418, gradientNorm: 0.041829, durationMs: 27439 },
   },
@@ -172,7 +172,7 @@ export const INITIAL_TELEMETRY_LOGS: TelemetryLog[] = [
 ];
 
 /**
- * Generates continuous synthetic stream events reflecting authentic Ultron behavior.
+ * Generates continuous synthetic stream events reflecting authentic Svel behavior.
  */
 export function generateNextTelemetryEvent(counter: number): TelemetryLog {
   const now = new Date().toISOString();
@@ -186,7 +186,7 @@ export function generateNextTelemetryEvent(counter: number): TelemetryLog {
         level: 'SUCCESS',
         channel: 'RIGOR',
         tag: '[RIGOR-VERIFIED]',
-        message: `UltronRigorMonitor: SHA-256 weight delta = ${(0.035 + (counter % 20) * 0.001).toFixed(4)} > 1e-4 [VERIFIED]`,
+        message: `SvelRigorMonitor: SHA-256 weight delta = ${(0.035 + (counter % 20) * 0.001).toFixed(4)} > 1e-4 [VERIFIED]`,
         details: 'Physical Proof-of-Work passed. Weight divergence confirmed via CPU byte digest.',
         metrics: { weightDelta: 0.0418, gradientNorm: 0.041829 },
       };

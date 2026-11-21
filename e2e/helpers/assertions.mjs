@@ -1,5 +1,5 @@
 /**
- * Assertion Utilities for Ultron AI Scientist E2E Test Suite
+ * Assertion Utilities for Svel AI Scientist E2E Test Suite
  * Provides rigorous checks for DOM structures, WCAG accessibility contrast,
  * color tokens, numeric bounds, and deterministic invariants.
  */

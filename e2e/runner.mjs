@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Master E2E Test Suite Runner for Ultron AI Scientist Web Platform
+ * Master E2E Test Suite Runner for Svel AI Scientist Web Platform
  * Executes 4-tier requirement-driven opaque-box verification across:
  * - Tier 1: Feature Coverage (35 tests)
  * - Tier 2: Boundary & Corner Cases (25 tests)
@@ -15,7 +15,7 @@ import { runTier2Tests } from './tier2-boundaries.e2e.mjs';
 import { runTier3Tests } from './tier3-combinations.e2e.mjs';
 import { runTier4Tests } from './tier4-scenarios.e2e.mjs';
 
-// ANSI terminal colors matching Ultron Obsidian & Emerald Palette
+// ANSI terminal colors matching Svel Obsidian & Emerald Palette
 const C = {
   reset: '\x1b[0m',
   bold: '\x1b[1m',
@@ -31,7 +31,7 @@ const C = {
 async function main() {
   const startTime = Date.now();
   console.log(`\n${C.emerald}${C.bold}========================================================================${C.reset}`);
-  console.log(`${C.emerald}${C.bold}   ULTRON AI SCIENTIST WEB PLATFORM — E2E TEST SUITE RUNNER            ${C.reset}`);
+  console.log(`${C.emerald}${C.bold}   SVEL AI SCIENTIST WEB PLATFORM — E2E TEST SUITE RUNNER            ${C.reset}`);
   console.log(`${C.gray}   4-Tier Requirement-Driven Opaque-Box Architectural Verification      ${C.reset}`);
   console.log(`${C.emerald}${C.bold}========================================================================${C.reset}\n`);
 

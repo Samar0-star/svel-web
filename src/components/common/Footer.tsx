@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ShieldCheck, Cpu, Terminal, GitCommit, Binary } from 'lucide-react';
 
 export const Footer: React.FC = () => {
-  // Canonical SHA-256 integrity hash from the Ultron computational core audit
+  // Canonical SHA-256 integrity hash from the Svel computational core audit
   const BUILD_SHA256 = '893cb8678404f06872d81f4047ab3fffe899ab8d8df1304eea9a8f20761e04fb';
   const BUILD_VERSION = 'v2.4.0-stochastic-hardened';
 
@@ -33,7 +33,7 @@ export const Footer: React.FC = () => {
           <div className="space-y-3">
             <div className="flex items-center space-x-2">
               <Cpu className="w-4 h-4 text-emerald-cold" />
-              <span className="font-bold text-white tracking-wider text-sm">ULTRON ARC</span>
+              <span className="font-bold text-white tracking-wider text-sm">SVEL ARC</span>
             </div>
             <p className="text-neutral-400 font-sans text-xs leading-relaxed">
               Autonomous synthetic research organism executing continuous 12–72 hour scientific campaigns with
@@ -139,7 +139,7 @@ export const Footer: React.FC = () => {
         <div className="pt-8 hairline-t flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-neutral-400">
           <div className="flex items-center space-x-2">
             <Terminal className="w-3.5 h-3.5 text-neutral-400" />
-            <span>ULTRON AI SCIENTIST • AUTONOMOUS SYNTHETIC RESEARCH PROTOCOL</span>
+            <span>SVEL AI SCIENTIST • AUTONOMOUS SYNTHETIC RESEARCH PROTOCOL</span>
           </div>
           <div className="flex items-center space-x-4">
             <span className="text-emerald-cold">● ALL KERNELS DETERMINISTIC</span>

@@ -1,23 +1,23 @@
-# TEST_INFRA.md — Ultron AI Scientist Web Platform E2E Test Infrastructure
+# TEST_INFRA.md — Svel AI Scientist Web Platform E2E Test Infrastructure
 
 > **Architecture Track**: Requirement-Driven Opaque-Box E2E Test Suite  
-> **Target System**: Ultron AI Scientist Web Platform  
-> **Working Directory**: `/Users/samaraldico/ultron-ai-scientist-web`  
-> **Specification Reference**: `ORIGINAL_REQUEST.md`, `PROJECT.md`, Reference Codebase `/Users/samaraldico/ULTRON AI Scientist`  
+> **Target System**: Svel AI Scientist Web Platform  
+> **Working Directory**: `/Users/samaraldico/svel-ai-scientist-web`  
+> **Specification Reference**: `ORIGINAL_REQUEST.md`, `PROJECT.md`, Reference Codebase `/Users/samaraldico/SVEL AI Scientist`  
 > **Test Harness Runner**: `node e2e/runner.mjs` or `npm run test:e2e`  
 
 ---
 
 ## 1. Overview & Test Architecture
 
-The Ultron AI Scientist E2E test suite validates the deeptech web platform through an **opaque-box, requirement-driven methodology**. The suite treats the system as a scientific software artifact and verifies observable behavior against authoritative contracts:
+The Svel AI Scientist E2E test suite validates the deeptech web platform through an **opaque-box, requirement-driven methodology**. The suite treats the system as a scientific software artifact and verifies observable behavior against authoritative contracts:
 
-1. **Deterministic Mathematical Oracles**: Mathematical properties derived from the reference codebase (`/Users/samaraldico/ULTRON AI Scientist`), including log-odds slope calculations, Welch-Z clash thresholds, Born mechanical stability, relativistic Bremsstrahlung radiation, and GSTM multimodal tensor dimensions.
+1. **Deterministic Mathematical Oracles**: Mathematical properties derived from the reference codebase (`/Users/samaraldico/SVEL AI Scientist`), including log-odds slope calculations, Welch-Z clash thresholds, Born mechanical stability, relativistic Bremsstrahlung radiation, and GSTM multimodal tensor dimensions.
 2. **DOM & Route State Integrity**: Verification of client-side routing across all 5 core routes (`/`, `/architecture`, `/campaigns`, `/domains`, `/console`), navigation headers, footers, and responsive views.
 3. **Visual & Design System Compliance**: Pure OLED monochrome palette (`#000000`), deep obsidian surfaces (`#080808` / `#0F0F0F` / `#141414`), 1px metallic borders, cold phosphorescent emerald accents (`#00E599` / `#10B981`), `color-scheme: dark`, and strict elimination of multi-color/rainbow clutter.
 4. **Canvas Shader & Interactive Animation**: Lifecycle, WebGL/2D rendering presence, 60 FPS animation loop handlers, resize reactions, mouse proximity listeners, and clean unmounting.
 5. **Real-Time Telemetry & Terminal**: Live streaming trace generator, log channel tagging (`[RIGOR-VERIFIED]`, `[GLASS-TELEMETRY]`, `[MORGUE]`), SHA-256 weight hash divergence assertions, pause/resume state machines, and channel filters.
-6. **Access & Waitlist Modal**: Interactive modal lifecycle, keyboard accessibility (Escape), email validation, organization inputs, and cryptographic/hex token generation (`ultron_live_sk_...`).
+6. **Access & Waitlist Modal**: Interactive modal lifecycle, keyboard accessibility (Escape), email validation, organization inputs, and cryptographic/hex token generation (`svel_live_sk_...`).
 
 ---
 
@@ -46,8 +46,8 @@ The test suite is structured into 4 hierarchical testing tiers:
 ## 3. Tier 1: Feature Coverage (>=5 Tests per Feature, Total: 35 Tests)
 
 ### Feature 1: Route Coverage (5 Dedicated Pages)
-- **T1.1.1 — Home / Hero Route (`/`)**: Asserts route resolution, hero headline containing Ultron Autonomous Scientific Research Organism, canonical visual assets, and telemetry statistics ($3.25/run unit cost, 12-72h campaigns).
-- **T1.1.2 — Architecture Route (`/architecture`)**: Asserts 4-Tier Swarm hierarchy representation (`Ultron-Core`, `Scholar-Prosecutor Dual Stream`, `CodeEngineer & SimulationRunner`, `MarketScout`), Falsification Engine breakdown, and SHA-256 weight audit description.
+- **T1.1.1 — Home / Hero Route (`/`)**: Asserts route resolution, hero headline containing Svel Autonomous Scientific Research Organism, canonical visual assets, and telemetry statistics ($3.25/run unit cost, 12-72h campaigns).
+- **T1.1.2 — Architecture Route (`/architecture`)**: Asserts 4-Tier Swarm hierarchy representation (`Svel-Core`, `Scholar-Prosecutor Dual Stream`, `CodeEngineer & SimulationRunner`, `MarketScout`), Falsification Engine breakdown, and SHA-256 weight audit description.
 - **T1.1.3 — Campaigns & The Morgue Route (`/campaigns`)**: Asserts 72-hour campaign timeline visualization, TCP congestion backoff (AIMD), AST syntax audit pipeline, and "The Morgue" rejected hypothesis tombstone ledger.
 - **T1.1.4 — Scientific Domains Route (`/domains`)**: Asserts 4 core domain kernels: Genomics (ITT, AutoDock Vina, ETKDGv3), Materials (pymatgen, M3GNet, $C_{ij}$ tensors), Fusion (Bremsstrahlung, Gamow peak, Lyapunov), and Multimodal ML (6-modality GSTM 422d, Adaptive Robust Loss).
 - **T1.1.5 — Interactive Console Route (`/console`)**: Asserts interactive workspace containing the live Telemetry Terminal, Epistemic Confidence Simulator, and Early Access modal trigger button.
@@ -69,7 +69,7 @@ The test suite is structured into 4 hierarchical testing tiers:
 ### Feature 4: Live Telemetry Terminal
 - **T1.4.1 — Stream Generation**: Verifies terminal produces streaming trace lines with valid timestamps and structured channel tags.
 - **T1.4.2 — Channel Formatting**: Verifies authentic channel markers (`[RIGOR-VERIFIED]`, `[GLASS-TELEMETRY]`, `[MORGUE]`, `[SCHOLAR]`, `[PROSECUTOR]`).
-- **T1.4.3 — SHA-256 Model Weight Delta Verification**: Verifies presence of cryptographic model audit events (e.g. `UltronRigorMonitor: SHA-256 weight delta = 0.0418 > epsilon [VERIFIED]`).
+- **T1.4.3 — SHA-256 Model Weight Delta Verification**: Verifies presence of cryptographic model audit events (e.g. `SvelRigorMonitor: SHA-256 weight delta = 0.0418 > epsilon [VERIFIED]`).
 - **T1.4.4 — Channel Filtering**: Verifies filtering logs by channel tag isolates matching logs and hides non-matching logs.
 - **T1.4.5 — Buffer Capacity & Pause/Resume**: Verifies buffer cap prevents runaway DOM expansion and pause button halts incoming log display.
 
@@ -91,7 +91,7 @@ The test suite is structured into 4 hierarchical testing tiers:
 - **T1.7.1 — Modal Trigger & Visibility**: Verifies clicking "Request Access" or "Early Access" reveals modal with `dialog` or `modal` role.
 - **T1.7.2 — Required Form Fields**: Verifies presence of Researcher Name, Academic/Institutional Email, Organization, and Research Domain.
 - **T1.7.3 — Email Validation**: Verifies email input enforces standard email formatting and flags malformed strings.
-- **T1.7.4 — Simulated Key Generation**: Verifies valid submission yields simulated API key with format `ultron_live_sk_[a-f0-9]{32}`.
+- **T1.7.4 — Simulated Key Generation**: Verifies valid submission yields simulated API key with format `svel_live_sk_[a-f0-9]{32}`.
 - **T1.7.5 — Keyboard & Backdrop Dismissal**: Verifies pressing `Escape` key or clicking outside modal backdrop closes the modal.
 
 ---
@@ -183,7 +183,7 @@ The test suite is structured into 4 hierarchical testing tiers:
   1. Researcher explores Home, Architecture, Campaigns, and Domains.
   2. Opens Waitlist / Early Access modal from any page.
   3. Fills in valid credentials (`Dr. Jane Doe`, `jane.doe@cern.ch`, `CERN / Large Hadron Collider`, `High-Energy Physics`).
-  4. Submits form; modal generates and displays API token `ultron_live_sk_...`.
+  4. Submits form; modal generates and displays API token `svel_live_sk_...`.
   5. Closes modal, navigates across routes, and re-opens modal to confirm credential status.
 
 ---

@@ -1,5 +1,5 @@
 /**
- * DOM & Browser Simulation Harness for Ultron AI Scientist E2E Testing
+ * DOM & Browser Simulation Harness for Svel AI Scientist E2E Testing
  * Built on JSDOM with HTML5 Canvas 2D/WebGL mocking, client-side routing,
  * event dispatchers, and accessibility queries.
  */
@@ -18,7 +18,7 @@ export function createTestEnvironment(initialUrl = 'http://localhost:3000/') {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ultron AI Scientist</title>
+  <title>Svel AI Scientist</title>
 </head>
 <body style="background-color: #000000; color: #f5f5f5;">
   <div id="root"></div>
@@ -219,7 +219,7 @@ export function getAllByRole(container, role) {
  * Synthetic Component Mounter for Opaque-Box E2E Testing
  * Implements the rigorous contracts defined in PROJECT.md and ORIGINAL_REQUEST.md
  */
-export class UltronComponentHarness {
+export class SvelComponentHarness {
   constructor(env) {
     this.env = env;
     this.window = env.window;
@@ -232,7 +232,7 @@ export class UltronComponentHarness {
   mountDnaCanvas(container, options = {}) {
     const canvas = this.document.createElement('canvas');
     canvas.setAttribute('role', 'img');
-    canvas.setAttribute('aria-label', 'Ultron Minimal Titanium DNA Canvas Simulation');
+    canvas.setAttribute('aria-label', 'Svel Minimal Titanium DNA Canvas Simulation');
     canvas.className = 'absolute inset-0 pointer-events-none w-full h-full';
     canvas.width = options.width || 1280;
     canvas.height = options.height || 720;
@@ -482,7 +482,7 @@ export class UltronComponentHarness {
     modalBackdrop.className = 'modal-backdrop fixed inset-0 bg-black/80 hidden z-50 flex items-center justify-center';
     modalBackdrop.setAttribute('role', 'dialog');
     modalBackdrop.setAttribute('aria-modal', 'true');
-    modalBackdrop.setAttribute('aria-label', 'Ultron Early Access Request');
+    modalBackdrop.setAttribute('aria-label', 'Svel Early Access Request');
 
     const modalContent = this.document.createElement('div');
     modalContent.className = 'modal-content glass-obsidian p-6 w-full max-w-md';
@@ -584,9 +584,9 @@ export class UltronComponentHarness {
         return;
       }
 
-      // Generate simulated API key: ultron_live_sk_<32hex>
+      // Generate simulated API key: svel_live_sk_<32hex>
       const hex = Array.from({ length: 32 }, () => Math.floor(Math.random() * 16).toString(16)).join('');
-      const apiKey = `ultron_live_sk_${hex}`;
+      const apiKey = `svel_live_sk_${hex}`;
 
       keyDisplay.textContent = apiKey;
       resultBox.classList.remove('hidden');
@@ -633,12 +633,12 @@ export class UltronComponentHarness {
    */
   mountFullApp(container, activeRoute = '/') {
     container.innerHTML = `
-      <div class="ultron-app min-h-screen bg-black text-[#f5f5f5] font-sans">
+      <div class="svel-app min-h-screen bg-black text-[#f5f5f5] font-sans">
         <header role="banner" class="navbar fixed top-0 w-full glass-obsidian hairline-b z-40">
           <nav role="navigation" aria-label="Main Navigation" class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
             <a href="/" class="brand-link flex items-center space-x-2">
               <span class="w-2.5 h-2.5 rounded-full bg-[#00E599] beacon-emerald"></span>
-              <span class="font-mono text-sm tracking-widest uppercase font-bold">ULTRON</span>
+              <span class="font-mono text-sm tracking-widest uppercase font-bold">SVEL</span>
             </a>
             <div class="nav-links hidden md:flex items-center space-x-8 text-xs font-mono">
               <a href="/" class="nav-link ${activeRoute === '/' ? 'text-[#00E599]' : 'text-white/70'}">Overview</a>

@@ -38,7 +38,7 @@ export const WeightDivergenceAudit: React.FC = () => {
   const isFraud = scenario === 'simulation_fraud';
 
   return (
-    <MetallicCard title="CRYPTOGRAPHIC PROOF-OF-WORK AUDIT" badge="ULTRON RIGOR" variant="terminal" glowOnHover>
+    <MetallicCard title="CRYPTOGRAPHIC PROOF-OF-WORK AUDIT" badge="SVEL RIGOR" variant="terminal" glowOnHover>
       <div className="space-y-6">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-xs font-mono pb-2 border-b border-white/10">
           <span className="text-neutral-400">TEST ATTACK SCENARIOS:</span>

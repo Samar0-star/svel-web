@@ -1,12 +1,12 @@
-# Project: Ultron AI Scientist Web Platform
+# Project: Svel AI Scientist Web Platform
 
 ## Architecture
 - **Framework**: Vite 6 + React 18/19 SPA with Client-Side Routing (`react-router-dom`)
 - **Language**: TypeScript 5.x in Strict Mode (`strict: true`, `noImplicitAny: true`)
 - **Styling**: Tailwind CSS with custom Obsidian & OLED monochrome palette (`#000000`, `#080808`, `#0F0F0F`, `#141414`), 1px metallic borders (`border-white/10`), crisp stark white typography (`#f5f5f5`), and single cold emerald accent (`#00E599` / `#10B981`). Zero rainbow/neon purple clutter.
 - **Visual Assets**:
-  - `/public/ultron_dna_minimal.jpg` (Minimal Titanium DNA Double Helix, 1376x768)
-  - `/public/ultron_core_minimal.jpg` (Synthetic Computational Core, 1376x768)
+  - `/public/svel_dna_minimal.jpg` (Minimal Titanium DNA Double Helix, 1376x768)
+  - `/public/svel_core_minimal.jpg` (Synthetic Computational Core, 1376x768)
 - **Interactive Visualizers**:
   - 60 FPS HTML5 Canvas double-helix DNA particle shader with mouse/scroll interaction
   - Interactive Epistemic Logit Derivative Confidence Slope Simulator
@@ -22,13 +22,13 @@
 | 3 | Core Navigation & Layout Shell | Header navbar with active route indicator, responsive mobile menu, deeptech footer with SHA-256 build verification | M1 | ORIGINAL_REQUEST §R1 |
 | 4 | Asset Integration | Canonical Titanium DNA double helix & Synthetic Computational Core images placed and optimized | M1 | ORIGINAL_REQUEST §Visual Assets |
 | 5 | Home / Hero Page (`/`) | Hero with minimal DNA visual, telemetry stats (12-72h campaigns, 0-token epistemic, $3.25 unit cost vs $240k human salary), core thesis, feature highlights | M2 | ORIGINAL_REQUEST §R2.1 |
-| 6 | Architecture Page (`/architecture`) | 4-Tier Swarm teardown (`Ultron-Core`, `Scholar-Prosecutor Dual Stream`, `CodeEngineer & SimulationRunner`, `MarketScout`), Falsification Engine, Proof-of-Work Weight Auditing, Epistemic Regulator | M2 | ORIGINAL_REQUEST §R2.2 |
+| 6 | Architecture Page (`/architecture`) | 4-Tier Swarm teardown (`Svel-Core`, `Scholar-Prosecutor Dual Stream`, `CodeEngineer & SimulationRunner`, `MarketScout`), Falsification Engine, Proof-of-Work Weight Auditing, Epistemic Regulator | M2 | ORIGINAL_REQUEST §R2.2 |
 | 7 | Campaigns Page (`/campaigns`) | Interactive 72-hour execution timeline emulator, TCP congestion backoff (AIMD), sigmoidal temperature decay, AST syntax audits, "The Morgue" kill-chain memory | M2 | ORIGINAL_REQUEST §R2.3 |
 | 8 | Domains Page (`/domains`) | Genomics & Medicine (ITT, RDKit ETKDGv3, AutoDock Vina), Materials (pymatgen, M3GNet, $C_{ij}$ tensors), Fusion (Relativistic Bremsstrahlung, Gamow peak, Lyapunov), Multimodal ML (6-modality GSTM, Adaptive Robust Loss) | M2 | ORIGINAL_REQUEST §R2.4 |
 | 9 | Console Page (`/console`) | Interactive experiment sandbox, live telemetry trace feed, epistemic slider, waitlist / API key request modal | M2 | ORIGINAL_REQUEST §R2.5 |
 | 10 | 60 FPS HTML5 Canvas DNA Shader | Continuous monochrome double-helix particle simulation responding to mouse proximity and scroll | M3 | ORIGINAL_REQUEST §R3 |
 | 11 | Epistemic Confidence Simulator | Interactive logit derivative slider demonstrating why linear scoring fails near asymptotic limits | M3 | ORIGINAL_REQUEST §R3 |
-| 12 | Live Streaming Telemetry Terminal | High-frequency trace emulator streaming authentic Ultron logs (`[RIGOR-VERIFIED]`, `[GLASS-TELEMETRY]`, `[MORGUE]`, etc.) | M3 | ORIGINAL_REQUEST §R3 |
+| 12 | Live Streaming Telemetry Terminal | High-frequency trace emulator streaming authentic Svel logs (`[RIGOR-VERIFIED]`, `[GLASS-TELEMETRY]`, `[MORGUE]`, etc.) | M3 | ORIGINAL_REQUEST §R3 |
 | 13 | Access & Credentials Modal | Waitlist submission and API key simulation modal for researchers | M3 | ORIGINAL_REQUEST §R2.5 |
 | 14 | Scientific Calculation Library | Deterministic TypeScript modules for Logit slope, Welch-Z clash, Bremsstrahlung loss, Born stability, and Bayesian updates | M4 | ORIGINAL_REQUEST §R4 |
 | 15 | Vitest Unit Test Suite | Comprehensive unit tests validating all mathematical formulas against ground truth test cases | M4 | ORIGINAL_REQUEST §R4 |
@@ -107,10 +107,10 @@ export function verifyCubicBornStability(
 
 ## Code Layout
 ```
-/Users/samaraldico/ultron-ai-scientist-web/
+/Users/samaraldico/svel-ai-scientist-web/
 ├── public/
-│   ├── ultron_dna_minimal.jpg
-│   ├── ultron_core_minimal.jpg
+│   ├── svel_dna_minimal.jpg
+│   ├── svel_core_minimal.jpg
 │   └── favicon.svg
 ├── src/
 │   ├── components/

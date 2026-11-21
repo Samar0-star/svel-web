@@ -17,7 +17,7 @@ import {
 import {
   createTestEnvironment,
   fireEvent,
-  UltronComponentHarness,
+  SvelComponentHarness,
 } from './helpers/dom-harness.mjs';
 import {
   calculateLogitSlope,
@@ -33,7 +33,7 @@ export async function runTier4Tests(recordResult) {
   // -------------------------------------------------------------
   await recordResult('T4.1 — Scenario 1: Complete Hypothesis Discovery & Falsification Lifecycle', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const root = env.document.getElementById('root');
 
     // Step 1: Researcher arrives at Home page
@@ -70,7 +70,7 @@ export async function runTier4Tests(recordResult) {
 
     fireEvent(modal.submitBtn, 'click');
     const key = modal.keyDisplay.textContent;
-    assertMatches(key, /^ultron_live_sk_[a-f0-9]{32}$/);
+    assertMatches(key, /^svel_live_sk_[a-f0-9]{32}$/);
   });
 
   // -------------------------------------------------------------
@@ -78,7 +78,7 @@ export async function runTier4Tests(recordResult) {
   // -------------------------------------------------------------
   await recordResult('T4.2 — Scenario 2: Superconductivity Mechanical Stability Investigation', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const root = env.document.getElementById('root');
 
     // Step 1: Open Domains page
@@ -110,7 +110,7 @@ export async function runTier4Tests(recordResult) {
   // -------------------------------------------------------------
   await recordResult('T4.3 — Scenario 3: High-Energy Fusion Plasma Bremsstrahlung Run', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const root = env.document.getElementById('root');
 
     // Step 1: Domains page plasma kernel inspection
@@ -144,7 +144,7 @@ export async function runTier4Tests(recordResult) {
   // -------------------------------------------------------------
   await recordResult('T4.4 — Scenario 4: Epistemic Velocity Stagnation & Structured Mutation', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const root = env.document.getElementById('root');
 
     harness.mountFullApp(root, '/console');
@@ -177,7 +177,7 @@ export async function runTier4Tests(recordResult) {
   // -------------------------------------------------------------
   await recordResult('T4.5 — Scenario 5: Full Researcher Onboarding & Credential Acquisition', async () => {
     const env = createTestEnvironment();
-    const harness = new UltronComponentHarness(env);
+    const harness = new SvelComponentHarness(env);
     const root = env.document.getElementById('root');
 
     // Step 1: Researcher navigates entire platform
@@ -202,7 +202,7 @@ export async function runTier4Tests(recordResult) {
     fireEvent(modal.submitBtn, 'click');
     assertEqual(modal.resultBox.classList.contains('hidden'), false);
     const generatedKey = modal.keyDisplay.textContent;
-    assertMatches(generatedKey, /^ultron_live_sk_[a-f0-9]{32}$/);
+    assertMatches(generatedKey, /^svel_live_sk_[a-f0-9]{32}$/);
 
     // Step 5: Copy key to clipboard
     fireEvent(modal.copyBtn, 'click');

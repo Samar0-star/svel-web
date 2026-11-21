@@ -26,7 +26,7 @@ export const ArchitecturePage: React.FC = () => {
           4-Tier Swarm &amp; Falsification Engine
         </h1>
         <p className="text-neutral-400 text-sm sm:text-base mt-3 max-w-3xl font-sans leading-relaxed">
-          Ultron isolates scientific generative exploration from adversarial evaluation. By decoupling
+          Svel isolates scientific generative exploration from adversarial evaluation. By decoupling
           the Scholar from the Prosecutor and enforcing cryptographic Proof-of-Work weight audits, the
           system prevents generative hallucination and premature consensus.
         </p>
@@ -44,7 +44,7 @@ export const ArchitecturePage: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Tier 1 */}
-          <MetallicCard title="TIER 1: ULTRON-CORE ORCHESTRATOR" badge="SUPER-EGO" glowOnHover>
+          <MetallicCard title="TIER 1: SVEL-CORE ORCHESTRATOR" badge="SUPER-EGO" glowOnHover>
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-xs font-mono text-emerald-cold">
                 <Cpu className="w-4 h-4" />
@@ -88,12 +88,12 @@ export const ArchitecturePage: React.FC = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-xs font-mono text-emerald-cold">
                 <Crosshair className="w-4 h-4" />
-                <span>AST Syntax Audit • GodModeSandbox • UltronRigorMonitor</span>
+                <span>AST Syntax Audit • GodModeSandbox • SvelRigorMonitor</span>
               </div>
               <p className="text-xs text-neutral-300 font-sans leading-relaxed">
                 <strong className="text-white">ExperimentAgent</strong> generates Python code, runs lexical AST scope audits
                 via NameVisitor, and executes code in isolated environments. Integrates RDKit, pymatgen,
-                and Vina. <strong className="text-white">UltronRigorMonitor</strong> intercepts PyTorch gradient steps to enforce
+                and Vina. <strong className="text-white">SvelRigorMonitor</strong> intercepts PyTorch gradient steps to enforce
                 physical weight evolution.
               </p>
               <div className="pt-2 border-t border-white/5 text-[11px] font-mono text-neutral-400 space-y-1">
@@ -111,7 +111,7 @@ export const ArchitecturePage: React.FC = () => {
                 <span>ScholarNexus • ReportComposer • SVG Lock</span>
               </div>
               <p className="text-xs text-neutral-300 font-sans leading-relaxed">
-                <strong className="text-white">UltronRigorMonitor</strong> verifies model parameters via SHA-256 cryptographic weight divergence checks.
+                <strong className="text-white">SvelRigorMonitor</strong> verifies model parameters via SHA-256 cryptographic weight divergence checks.
                 <strong className="text-white"> ReportComposer</strong> launches headless Chromium (<code className="text-neutral-200 font-mono text-[11px]">async_playwright</code>)
                 with DOM polling to guarantee 100% SVG render completion prior to PDF print.
                 <strong className="text-white"> GodzillaWriterAgent</strong> forces an immutable <code className="text-neutral-200 font-mono text-[11px]">&lt;claim_registry&gt;</code> linking prose to Jupyter cells.
@@ -140,7 +140,7 @@ export const ArchitecturePage: React.FC = () => {
             <MetallicCard title="DIFFERENTIAL EVOLUTION & UNBREAKABILITY INDEX" badge="GLOBAL OPTIMIZATION" glowOnHover>
               <div className="space-y-4">
                 <p className="text-xs text-neutral-300 font-sans leading-relaxed">
-                  Ultron deploys global adversarial optimization via Differential Evolution (<code className="text-neutral-200 font-mono text-[11px]">scipy.optimize.differential_evolution</code>)
+                  Svel deploys global adversarial optimization via Differential Evolution (<code className="text-neutral-200 font-mono text-[11px]">scipy.optimize.differential_evolution</code>)
                   to aggressively search the parameter manifold for counter-examples that destroy the hypothesis:
                 </p>
 
@@ -260,7 +260,7 @@ export const ArchitecturePage: React.FC = () => {
                   a claim and generate cherry-picked scripts to prove themselves right.
                 </p>
                 <p>
-                  Ultron reverses this incentive architecture. The Prosecutor Stream is rewarded exclusively for
+                  Svel reverses this incentive architecture. The Prosecutor Stream is rewarded exclusively for
                   <strong className="text-rose-400"> finding boundary cases and destroying hypotheses</strong>. A finding is only
                   admitted into the persistent World Model if it survives lethal adversarial perturbations and differential evolution stress testing.
                 </p>
@@ -281,14 +281,14 @@ export const ArchitecturePage: React.FC = () => {
         <div className="flex items-center justify-between pb-2 border-b border-white/10">
           <h2 className="text-sm font-mono font-bold text-white tracking-wider flex items-center gap-2">
             <Lock className="w-4 h-4 text-emerald-cold" />
-            <span>CRYPTOGRAPHIC PROOF-OF-WORK WEIGHT AUDITING (UltronRigorMonitor)</span>
+            <span>CRYPTOGRAPHIC PROOF-OF-WORK WEIGHT AUDITING (SvelRigorMonitor)</span>
           </h2>
           <span className="text-xs font-mono text-neutral-500">ANTI-HALLUCINATION HARNESS</span>
         </div>
 
         <p className="text-xs sm:text-sm text-neutral-400 font-sans max-w-3xl">
           To physically verify that a machine learning experiment actually executed gradient descent
-          rather than fabricating fake convergence tables, Ultron hashes parameter tensors before and
+          rather than fabricating fake convergence tables, Svel hashes parameter tensors before and
           after execution and enforces a strict gradient norm floor:
         </p>
 
@@ -307,7 +307,7 @@ export const ArchitecturePage: React.FC = () => {
         </div>
 
         <p className="text-xs sm:text-sm text-neutral-400 font-sans max-w-3xl">
-          Interact directly with Ultron&apos;s Epistemic Regulator below. Test why linear probability slopes fail
+          Interact directly with Svel&apos;s Epistemic Regulator below. Test why linear probability slopes fail
           near confidence limits and verify statistical clash detection against prior findings:
         </p>
 
